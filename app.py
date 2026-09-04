@@ -57,7 +57,7 @@ if st.button("🚀 Generate Content", type="primary", use_container_width=True):
             try:
                 # Using Groq's fast Llama 3.1 8B model
                 response = client.chat.completions.create(
-                    model="llama-3.1-8b-instant",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {"role": "system", "content": "You are a creative social media content strategist."},
                         {"role": "user", "content": prompt}
